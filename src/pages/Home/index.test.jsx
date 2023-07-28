@@ -5,13 +5,9 @@ import Page from ".";
 
 describe("Home Page component test suites", () => {
   it('should display Hello, World!', async () => {
-    const homePage = render(Page)
+    render(<Page />)
 
-    console.log("=====")
-    console.log(homePage.container.children)
-    console.log("=====")
-
-    expect(true).toBe(true)
+    expect(screen.getByTestId('title').textContent).toEqual('Hello, World!')
   })
 })
 

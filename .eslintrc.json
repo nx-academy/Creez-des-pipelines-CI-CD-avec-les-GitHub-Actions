@@ -1,8 +1,0 @@
-{
-   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "next",
-    "prettier",
-    "next/core-web-vitals"
-  ]
-}

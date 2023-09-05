@@ -3,6 +3,8 @@ name: Running linter and tests
 on:
     push:
         branches: ['main']
+    pull_request:
+        types: [opened]
 
 jobs:
     build:

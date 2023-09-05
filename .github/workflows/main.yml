@@ -1,13 +1,28 @@
-name: Testing CI
+name: Running linter and tests
 
-on: push
+on:
+    push:
+        branches: ['main']
 
 jobs:
     build:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v3
+            - name: Checkout
+              uses: actions/checkout@v3
+        
+            - name: Setting up Node
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+                cache: 'npm'
+            
+            - name: Installing dependencies
+              run: npm i
 
-            - name: Run a one-line script
-              run: echo "Hello, World!"
+            - name: Linting code
+              run: npm run lint
+
+            - name: Running tests
+              run: npm run test

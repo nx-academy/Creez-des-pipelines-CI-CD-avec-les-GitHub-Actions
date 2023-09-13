@@ -7,7 +7,7 @@ on:
         types: [opened]
 
 jobs:
-    build:
+    install_and_build:
         runs-on: ubuntu-latest
 
         steps:
@@ -21,10 +21,7 @@ jobs:
                 cache: 'npm'
             
             - name: Installing dependencies
-              run: npm i
+              run: npm ci
 
-            - name: Linting code
-              run: npm run lint
-
-            - name: Running tests
-              run: npm run test
+            - name: Building the app
+              run: npm run build

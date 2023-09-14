@@ -41,10 +41,7 @@ jobs:
           cache: 'npm'
 
       - name: Listing stuff
-        run: ls
-
-      - name: Installing dependencies
-        run: npm ci
+        run: ls -al
 
       - name: Running Linter
         run: npm run lint

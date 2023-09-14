@@ -27,4 +27,4 @@ jobs:
         run: npm run typecheck
 
       - name: Priting congratulations
-        run: Job done! 🫡
+        run: echo "Job done! 🫡"

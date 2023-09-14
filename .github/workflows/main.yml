@@ -19,17 +19,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Installing dependencies
-        run: npm install
-
+        run: npm ci
+      
       - name: Building the app
         run: npm run build
 
@@ -46,13 +38,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+
+      - name: Installing dependencies
+        run: npm ci
 
       - name: Running Linter
         run: npm run lint

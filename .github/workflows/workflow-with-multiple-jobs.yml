@@ -11,6 +11,9 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
+
+            - name: Test
+              run: npm run lint
     
     second-job:
         needs: first-job

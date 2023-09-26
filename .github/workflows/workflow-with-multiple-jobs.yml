@@ -1,0 +1,21 @@
+name: A workflow with multiple jobs
+
+on:
+    push:
+        branches: ["partie-2/chapitre-2/section-4-fin"]
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+    
+    second-job:
+        needs: first-job
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Another job
+              run: echo "Second job depends on first one"

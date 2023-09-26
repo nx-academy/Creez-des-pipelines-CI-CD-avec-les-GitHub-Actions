@@ -1,0 +1,20 @@
+name: A workflow with multiple jobs
+
+on:
+    push:
+        branches: ["partie-2/chapitre-2/section-2-fin"]
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+    
+    second-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Echo something
+              run: echo "Something"

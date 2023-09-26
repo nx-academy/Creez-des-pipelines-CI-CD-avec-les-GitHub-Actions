@@ -17,6 +17,9 @@ jobs:
               with:
                 node-version: 18
 
+            - name: Install librairies
+              run: npm i
+
             - name: Run linter
               run: npm run lint
 

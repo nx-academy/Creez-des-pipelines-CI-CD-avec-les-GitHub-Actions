@@ -2,7 +2,7 @@ name: A failling Workflow
 
 on:
   push:
-    branches: ["partie-2/chapitre-2/section-2"]
+    branches: ["partie-2/chapitre-2/section-2", "partie-2/chapitre-2/section-2-fin"]
 
 jobs:
   main:
@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: Install librairies
+        run: npm i
 
       - name: Run linter
         run: npm run lint

@@ -1,30 +1,27 @@
 name: A failling Workflow
 
 on:
-    push:
-        branches: ["partie-2/chapitre-2/section-2"]
+  push:
+    branches: ["partie-2/chapitre-2/section-2"]
 
 jobs:
-    main:
-        runs-on: ubuntu-latest
+  main:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-        
-            - name: Set Up Node
-              uses: actions/setup-node@v3
-              with:
-                node-version: 18
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-            - name: Install librairies
-              run: npm i
+      - name: Set Up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-            - name: Run linter
-              run: npm run lint
+      - name: Run linter
+        run: npm run lint
 
-            - name: Build the app
-              run: npm run build
+      - name: Build the app
+        run: npm run build
 
-            - name: Test the app
-              run: npm run test
+      - name: Test the app
+        run: npm run test

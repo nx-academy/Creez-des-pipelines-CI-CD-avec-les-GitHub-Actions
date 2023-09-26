@@ -1,8 +1,6 @@
 name: Build and Test the App
 
-on:
-  push:
-    branches: ["partie-2/chapitre-2/section-4-fin", "partie-2/chapitre-2-fin"]
+on: push
 
 jobs:
   lint:

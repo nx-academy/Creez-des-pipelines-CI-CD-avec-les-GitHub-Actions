@@ -1,7 +1,5 @@
 # Créez des pipelines CI/CD avec les GitHub Actions
 
-WARNING: Work in Progress 🙂
-
 Bienvenue sur le code source du projet fil rouge Portfolio. Ce projet a été réalisé en lien avec le cours "Créez des pipelines CI/CD avec les GitHub Actions" sur [NX Academy](https://beta.nx.academy).
 
 Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est open source. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, je vous invite à ouvrir une [issue](https://github.com/nx-academy/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions/issues/new).
@@ -60,3 +58,10 @@ npm run build
 npm run preview
 ```
 
+Pour lancer le lint et les tests :
+
+```
+npm run lint
+
+npm run test
+```

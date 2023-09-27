@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: 'https://nx-academy.github.io/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions/',
+  base: '/',
   plugins: [react()],
   root: './src',
   test: {

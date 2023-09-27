@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nx-academy.github.io/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions",
   "scripts": {
     "build": "vite build",
     "dev": "vite",

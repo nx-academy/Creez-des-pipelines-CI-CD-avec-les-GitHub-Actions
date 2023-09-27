@@ -4,6 +4,11 @@ on:
   push:
     branches: ["partie-3/chapitre-1-fin"]
 
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
 jobs:
   deploy:
     environment:

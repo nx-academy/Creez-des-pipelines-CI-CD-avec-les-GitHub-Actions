@@ -1,6 +1,8 @@
 name: Printing "Hello, World!" on CI
 
-on: push
+on:
+    push:
+        branches: ["main"]
 
 jobs:
     hello-world:

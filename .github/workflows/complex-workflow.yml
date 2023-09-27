@@ -1,6 +1,8 @@
 name: Build and Test the App
 
-on: push
+on:
+  push:
+    branches: ["main"]
 
 jobs:
   lint:

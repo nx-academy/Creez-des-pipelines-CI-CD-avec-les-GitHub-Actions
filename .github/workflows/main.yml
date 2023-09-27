@@ -2,7 +2,7 @@ name: Lint, Build, Test, and Deploy the React App
 
 on:
   push:
-    branches: ["partie-2/chapitre-2-fin"]
+    branches: ["partie-3/chapitre-2-fin"]
 
 permissions:
   contents: read

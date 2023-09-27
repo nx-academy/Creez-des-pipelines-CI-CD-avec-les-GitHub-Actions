@@ -7,7 +7,7 @@ describe("Home Page component test suites", () => {
   it('should display Hello, World!', async () => {
     render(<Page />)
 
-    expect(screen.getByTestId('title').textContent).toEqual('Hello, Thomas!')
+    expect(screen.getByTestId('title').textContent).toEqual('Hello, World!')
   })
 })
 

@@ -2,7 +2,7 @@ name: A workflow with multiple jobs
 
 on:
     push:
-        branches: ["partie-2/chapitre-2/section-4-fin"]
+        branches: ["full-project"]
 
 jobs:
     first-job:

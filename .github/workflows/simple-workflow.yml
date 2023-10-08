@@ -2,7 +2,7 @@ name: Install and Run Lint and TypeCheck
 
 on:
     push:
-        branches: ["partie-2/chapitre-1/section-3-fin", "partie-2/chapitre-1-fin"]
+        branches: ["full-project"]
 
 jobs:
     main:

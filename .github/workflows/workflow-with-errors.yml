@@ -2,7 +2,7 @@ name: A failling Workflow
 
 on:
   push:
-    branches: ["partie-2/chapitre-2/section-2", "partie-2/chapitre-2/section-2-fin"]
+    branches: ["full-project"]
 
 jobs:
   main:

@@ -2,7 +2,7 @@ name: Printing "Hello, World!" on CI
 
 on:
     push:
-        branches: ["main"]
+        branches: ["full-projectt"]
 
 jobs:
     hello-world:

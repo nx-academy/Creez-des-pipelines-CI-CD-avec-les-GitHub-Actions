@@ -2,7 +2,7 @@ name: Build and Test the App
 
 on:
   push:
-    branches: ["main"]
+    branches: ["full-project"]
 
 jobs:
   lint:

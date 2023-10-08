@@ -1,6 +1,6 @@
 # Créez des pipelines CI/CD avec les GitHub Actions
 
-Bienvenue sur le code source du projet fil rouge Portfolio. Ce projet a été réalisé en lien avec le cours "Créez des pipelines CI/CD avec les GitHub Actions" sur [NX Academy](https://beta.nx.academy).
+Bienvenue sur le code source du projet fil rouge **Portfolio**. Ce projet a été réalisé en lien avec le cours **Créez des pipelines CI/CD avec les GitHub Actions** sur [NX Academy](https://beta.nx.academy).
 
 Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est open source. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, je vous invite à ouvrir une [issue](https://github.com/nx-academy/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions/issues/new).
 
@@ -15,7 +15,8 @@ Nous utiliserons npm pour toutes les étapes d'installation du cours.
 
 ## Outils conseillés
 
-- [Visual Studio Code](https://code.visualstudio.com/) : Visual Studio Code est notre éditeur de texte durant tout le cours. Tous les screencasts seront réalisés avec lui.
+- [Visual Studio Code](https://code.visualstudio.com/) : Visual Studio Code est notre éditeur de texte durant tout le cours.
+Tous les screencasts ont été réalisés avec.
 
 ## Installation
 
@@ -33,6 +34,12 @@ git@github.com:nx-academy/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions.git
 
 ```
 https://github.com/nx-academy/Creez-des-pipelines-CI-CD-avec-les-GitHub-Actions.git
+```
+
+Le code complet du projet se trouve sur la branche `full-project`.
+
+```
+git checkout full-project
 ```
 
 ### Installation
@@ -61,7 +68,9 @@ npm run preview
 Pour lancer le lint et les tests :
 
 ```
+# Linting
 npm run lint
 
+# Building
 npm run test
 ```

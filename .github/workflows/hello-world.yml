@@ -3,11 +3,11 @@ name: Printing "Hello, World!" on CI
 on: push
 
 jobs:
-    hello-world:
-        runs-on: windows-latest
+  hello-world:
+    runs-on: windows-latest
 
-        steps:
-            -uses: actions/checkout@v3
+    steps:
+      -uses: actions/checkout@v3
 
-            -uses: Printing hello, world on CI
-            run: echo "Hello, World!"
+      -name: Printing hello, world on CI
+      run: echo "Hello, World!"
